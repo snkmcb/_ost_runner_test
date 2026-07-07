@@ -28,8 +28,8 @@ cells:
     runner: windows-hosted
     runtime_artifact: sha256:7b410d92b9210bc751c8095f886797043ab7f1d8d9f5055daf8242caaa34876a
     runtime_remote:
-      uri: oci://ghcr.io/snkmcb/openstrata-cy2026-windows-x86_64-py313-usd@sha256:OCIDIGEST
-      expected_oci_digest: sha256:OCIDIGEST
+      uri: oci://ghcr.io/snkmcb/openstrata-cy2026-windows-x86_64-py313-usd@sha256:39a588fde380a2e32878be21ea4770faac900d2d17b88ee2047aa06b78c05a1f
+      expected_oci_digest: sha256:39a588fde380a2e32878be21ea4770faac900d2d17b88ee2047aa06b78c05a1f
     bundle: plugins/toy
     platform: cy2026
     profile: usd
@@ -39,8 +39,8 @@ cells:
     runner: windows-hosted
     runtime_artifact: sha256:7b410d92b9210bc751c8095f886797043ab7f1d8d9f5055daf8242caaa34876a
     runtime_remote:
-      uri: oci://ghcr.io/snkmcb/openstrata-cy2026-windows-x86_64-py313-usd@sha256:OCIDIGEST
-      expected_oci_digest: sha256:OCIDIGEST
+      uri: oci://ghcr.io/snkmcb/openstrata-cy2026-windows-x86_64-py313-usd@sha256:39a588fde380a2e32878be21ea4770faac900d2d17b88ee2047aa06b78c05a1f
+      expected_oci_digest: sha256:39a588fde380a2e32878be21ea4770faac900d2d17b88ee2047aa06b78c05a1f
     bundle: plugins/toy
     platform: cy2026
     profile: usd
