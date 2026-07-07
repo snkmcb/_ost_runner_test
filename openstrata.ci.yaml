@@ -1,0 +1,47 @@
+# OpenStrata CI support matrix — public E2E fixture for the generated
+# hosted source-CI lane (open-strata v0.9.0, remote-artifact-transport plan
+# Phase 2).
+#
+# This repo is a product-level contract: a tiny usd-fileformat plugin built
+# from source on GitHub-hosted Windows runners, with the pinned runtime SDK
+# pulled from a public OCI registry and `ost` bootstrapped from a pinned
+# release. Regenerate workflows with: ost ci generate github --force
+schema: 1
+
+bootstrap:
+  ost:
+    version: "0.9.0-rc.1"
+    repository: animu-sphere/open-strata
+    sha256:
+      x86_64-pc-windows-msvc: 0a63259f108bb629fcaa37dd74984cf91a02b14bd94e4e8bb519379f5d589274
+
+runners:
+  windows-hosted:
+    kind: github-hosted
+    image: windows-2022
+    billing:
+      acknowledgement: required
+
+cells:
+  - name: toy-pr-windows
+    lane: pull_request
+    runner: windows-hosted
+    runtime_artifact: sha256:7b410d92b9210bc751c8095f886797043ab7f1d8d9f5055daf8242caaa34876a
+    runtime_remote:
+      uri: oci://ghcr.io/snkmcb/openstrata-cy2026-windows-x86_64-py313-usd@sha256:OCIDIGEST
+      expected_oci_digest: sha256:OCIDIGEST
+    bundle: plugins/toy
+    platform: cy2026
+    profile: usd
+    up_to: 5
+  - name: toy-main-windows
+    lane: main
+    runner: windows-hosted
+    runtime_artifact: sha256:7b410d92b9210bc751c8095f886797043ab7f1d8d9f5055daf8242caaa34876a
+    runtime_remote:
+      uri: oci://ghcr.io/snkmcb/openstrata-cy2026-windows-x86_64-py313-usd@sha256:OCIDIGEST
+      expected_oci_digest: sha256:OCIDIGEST
+    bundle: plugins/toy
+    platform: cy2026
+    profile: usd
+    up_to: 5

@@ -1,0 +1,23 @@
+{
+    "Plugins": [
+        {
+            "Type": "library",
+            "Name": "ToyFileFormat",
+            "Root": ".",
+            "LibraryPath": "../../../lib/libToyFileFormat.dll",
+            "ResourcePath": ".",
+            "Info": {
+                "Types": {
+                    "ToyFileFormat": {
+                        "bases": ["SdfFileFormat"],
+                        "displayName": "Toy File Format",
+                        "extensions": ["toy"],
+                        "formatId": "toy",
+                        "primary": true,
+                        "target": "usd"
+                    }
+                }
+            }
+        }
+    ]
+}

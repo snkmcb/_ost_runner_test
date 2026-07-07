@@ -1,0 +1,4 @@
+toy 1.0
+# A minimal, valid fixture for the toy format.
+# `ost plugin test` opens this with the built plugin (smoke + roundtrip).
+node root
