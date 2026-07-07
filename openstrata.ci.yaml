@@ -10,10 +10,10 @@ schema: 1
 
 bootstrap:
   ost:
-    version: "0.9.0-rc.2"
+    version: "0.9.0-rc.3"
     repository: animu-sphere/open-strata
     sha256:
-      x86_64-pc-windows-msvc: d826cd71105113dc0d4368d4751545f50b0299b115452eb805aeef88303a3fd3
+      x86_64-pc-windows-msvc: 980eb306ec20f14dbe0080fc02118f5985dc62562197d699b0e8fadd0097d330
 
 runners:
   windows-hosted:
